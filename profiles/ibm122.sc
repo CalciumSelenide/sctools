@@ -8,6 +8,8 @@ remapblock
 
   # Extra Function Key Bank (left side of keyboard)
   EXTRA_F2    ESC
+  EXTRA_F3    SCROLL_LOCK
+  EXTRA_F4    PRINTSCREEN
   EXTRA_F9    LGUI
   EXTRA_F10   RGUI
 
