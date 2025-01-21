@@ -15,14 +15,26 @@ remapblock
 
   # Reassign normal keys amidst the board as desired
   EUROPE_1    BACKSLASH         # Key on the inside of the L-shaped Enter key
+  EUROPE_2    LSHIFT            # <> Key by LShift - just make it LShift
 
   # Configure the numeric pad to the traditional PC layout
-  PAD_PLUS    ENTER             # num keypad: "Field +" becomes Enter
-  NUM_LOCK    SLASH             # num keypad: traditional position of 
+  PAD_PLUS    PAD_ENTER         # num keypad: "Field +" becomes Enter
+  NUM_LOCK    PAD_SLASH         # num keypad: traditional position of 
   ESC         NUM_LOCK          # The top, leftmost key on the numpad originally outputs Esc. Make it a NumLock
   PAD_ASTERIX INTERNATIONAL_9   # Rightmost column, second row - reassign
   PAD_MINUS   PAD_PLUS          # Rightmost column, third row  - reassign
   EXTRA_SYSRQ PAD_MINUS
   SCROLL_LOCK PAD_ASTERIX
   
+endblock
+
+macroblock
+  
+  # Make a Save Button macro
+  macro LANG_4
+    MAKE LCTRL
+    PRESS S
+    BREAK LCTRL
+  endmacro
+
 endblock
