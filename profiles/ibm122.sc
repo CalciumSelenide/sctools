@@ -1,15 +1,13 @@
 # CalciumSelnide IBM M122 Terminal Keyboard
-# 
-# Soarer's converter configuration file.
-#
 # I used Daniele Paolo Scarpazza's IBM Config for reference and inspiration.
 
 remapblock
-
   # Extra Function Key Bank (left side of keyboard)
   EXTRA_F2    ESC
   EXTRA_F3    SCROLL_LOCK
   EXTRA_F4    PRINTSCREEN
+  EXTRA_F7    MEDIA_MY_COMPUTER
+  EXTRA_F8    FN1
   EXTRA_F9    LGUI
   EXTRA_F10   RGUI
 
@@ -29,7 +27,6 @@ remapblock
 endblock
 
 macroblock
-  
   # Make a Save Button macro
   macro LANG_4
     MAKE LCTRL
@@ -37,4 +34,10 @@ macroblock
     BREAK LCTRL
   endmacro
 
+  # Make PANIC button
+  macro EXTRA_F1
+    MAKE LCTRL
+    PRESS C
+    BREAK LCTRL
+  endmacro
 endblock
